@@ -33,6 +33,11 @@
         {
             matchDepNames: ["autotools-language-server"],
             allowedVersions: "!/0\\.0\\.19/"
+        },
+        {
+            // clice only publishes GitHub pre-releases, which Renovate ignores by default.
+            matchDepNames: ["clice"],
+            ignoreUnstable: false
         }
     ],
     "ignoreDeps": [
